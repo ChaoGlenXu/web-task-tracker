@@ -106,9 +106,9 @@ function App() {
             ) : (
             <div> {/* comment: if regular display task */}
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-x-4">
-                  <button onClick={() => toggleTask(task._id)} className={`h-6 w-6 border rounded-full flex items-center justify-center ${task.completed ? "bg-green-500 border-green-500" : "border-gray-300 hover:border-blue-400"}`}>{task.completed && <MdOutlineDone/>}</button>
-                  <span className="text-gray-800 font-medium">{task.text}</span>
+                <div className="flex items-center gap-x-4 overflow-hidden">
+                  <button onClick={() => toggleTask(task._id)} className={`flex-shrink-0 h-6 w-6 border rounded-full flex items-center justify-center ${task.completed ? "bg-green-500 border-green-500" : "border-gray-300 hover:border-blue-400"}`}>{task.completed && <MdOutlineDone/>}</button>
+                  <span className="text-gray-800 truncate font-medium">{task.text}</span>
                 </div>
                 <div className="flex gap-x-2">
                   <button className="p-2 text-blue-500 rounded-lg hover:bg-blue-100 duration-200 cursor-pointer" onClick={() => startEditing(task)}><MdModeEditOutline/></button>
