@@ -6,9 +6,9 @@ import taskRoutes from "./routes/task.route.js";
 import cors from "cors"; // this code may not be needed since deploying monolithic 
 import path from "path";
 
-//import { fileURLToPath } from "url";
-//const __filename = fileURLToPath(import.meta.url);
-//const __dirname = path.dirname(__filename);
+//import { fileURLToPath } from "url";   //wrong and not used
+//const __filename = fileURLToPath(import.meta.url); //wrong and not used
+//const __dirname = path.dirname(__filename); //wrong and not used
 
 
 const PORT = process.env.PORT || 5000;
