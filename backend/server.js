@@ -6,9 +6,9 @@ import taskRoutes from "./routes/task.route.js";
 import cors from "cors"; // this code may not be needed since deploying monolithic 
 import path from "path";
 
-import { fileURLToPath } from "url";
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+//import { fileURLToPath } from "url";
+//const __filename = fileURLToPath(import.meta.url);
+//const __dirname = path.dirname(__filename);
 
 
 const PORT = process.env.PORT || 5000;
@@ -25,7 +25,7 @@ app.use("/api/tasks", taskRoutes);
 
 
 //following code are an attempt to put this online live now, before this, it has been full stack working locally well
-const _dirname = path.resolve();
+const __dirname = path.resolve();
 
 if (process.env.NODE_ENV === "production"){
     app.use(express.static(path.join(__dirname, "../frontend/dist")));
