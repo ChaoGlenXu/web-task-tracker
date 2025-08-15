@@ -20,4 +20,5 @@ Try it out here: [Live Demo](https://web-task-tracker.onrender.com/)
 **Database:** MongoDB (Mongoose ODM)  
 **Other Tools:** Git, npm, dotenv, concurrently
 
-## 📂 Project Structure
+## 📂 rchitecture & Deployment
+- The monolithic architecture was chosen for **simpler deployment and easier maintenance**
